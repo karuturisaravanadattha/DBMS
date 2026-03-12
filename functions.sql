@@ -1,0 +1,16 @@
+create database marks;
+use marks ;
+create table marks (ID int unique, NAME varchar(30) not null , OS int , DBMS int default 16 ) ;
+insert into marks values (1,'A', 15,16),(2,'B',14,15),(3,'C',13,14);
+insert into marks (ID,NAME) values (4,'D');
+insert into marks (ID,NAME ,OS) values (5,'F',16);
+insert into marks (ID,NAME,DBMS) values (6,'E',10);
+select *from marks;
+select count(NAME) from marks ;
+select avg(OS) from marks ;
+select sum(DBMS) from marks;
+select max(OS) from marks;
+select min(DBMS) from marks ;
+select *from marks;
+truncate table marks;
+drop table marks;

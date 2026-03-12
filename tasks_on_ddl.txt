@@ -1,0 +1,31 @@
+Load the below data
+----------------------
+CREATE TABLE people(
+    p_id NUMBER,
+    p_name VARCHAR2(30),
+    email VARCHAR2(100)
+);
+INSERT INTO people VALUES(123, 'Alice', 'alice@gmail.com');
+INSERT INTO people VALUES(456, 'Bob', 'bob@gmail.com');
+------------------------------------------------------------
+
+Taks:
+-------
+
+1. Add two new columns called age and gender to the existing table people
+
+age : NUMBER
+gender: VARCHAR2(6)
+
+2. Rename the column p_name to person_name
+
+3. Increase the length of gender from 6 to 20
+
+4. DROP the column age completely
+
+5. Rename entire table from people to people_data
+
+6. make the data present in the people_data table go away
+
+7. Make the people_data table go away
+
